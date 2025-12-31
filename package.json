@@ -1,0 +1,19 @@
+{
+  "name": "nasa-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run watch --prefix server",
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "test": "npm run test --prefix server && npm run test --prefix client",
+    "install-server": "npm run install --prefix server",
+    "install-client": "npm run install --prefix client",
+    "install": "npm run install-server && npm run install-client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
