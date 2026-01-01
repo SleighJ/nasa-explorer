@@ -10,10 +10,14 @@
     "test": "npm run test --prefix server && npm run test --prefix client",
     "install-server": "npm run install --prefix server",
     "install-client": "npm run install --prefix client",
+    "deploy": "npm run build --prefix client && npm start --prefix server",
     "install": "npm run install-server && npm run install-client"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "morgan": "^1.10.1"
+  }
 }
