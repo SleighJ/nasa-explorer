@@ -1,7 +1,5 @@
 const launches = require('./launches.mongo');
 
-const launches = new Map();
-
 let latestFlightNumber = 100;
 
 const launch = {
@@ -14,8 +12,6 @@ const launch = {
   upcoming: true,
   success: true,
 };
-
-launches.set(launch.flightNumber, launch);
 
 function existsLaunchWithId(launchId) {
   return launches.has(launchId);
