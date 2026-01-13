@@ -18,7 +18,7 @@ function existsLaunchWithId(launchId) {
 }
 
 function getAllLaunches() {
-  return Array.from(launches.values());
+  return launches.find({});
 }
 
 function addNewLaunch(launch) {
